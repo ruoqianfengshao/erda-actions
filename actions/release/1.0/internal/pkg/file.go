@@ -61,11 +61,6 @@ func UploadFileNew(filePath string, cfg conf.Conf) (*pb.FileUploadResponse, erro
 	if !resp.Success {
 		return nil, errors.Errorf(resp.Error.Msg)
 	}
-
-	// 兖矿临时修改
-	v := strings.ReplaceAll(resp.Data.DownloadURL, "http://dice.paas.ykjt.cc", "https://appstore.ykjt.cn")
-	v = strings.ReplaceAll(v, "https://dice.paas.ykjt.cc", "https://appstore.ykjt.cn")
-	resp.Data.DownloadURL = v
 	return &resp, nil
 }
 

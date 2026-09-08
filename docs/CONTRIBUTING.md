@@ -37,6 +37,11 @@ actions/echo
 
 TODO
 
+
+## 公开仓库内容要求
+
+不得提交客户名称、域名、系统地址、凭证或客户特定部署逻辑。部署专用配置与客户定制应保留在私有部署配置中，并在提交 Pull Request 前检查暂存区是否包含此类内容。
+
 ## 如何做好版本兼容
 
 请查看 [这里](https://dice.app.terminus.io/workBench/projects/70/apps/178/repo/tree/develop/docs/dice-version-compatible.md)
