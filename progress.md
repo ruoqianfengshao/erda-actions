@@ -9,7 +9,8 @@
 ### Testing
 
 - The pre-rewrite scan confirmed the reported customer-specific content was present in `master` history.
-- Post-rewrite content, history, reference, and package-test verification will be recorded before any remote force push.
+- Post-rewrite content, history, reference, and package-test verification completed locally; no remote force push was performed.
+- The original reported commit and the first customer-specific commit are no longer reachable from the rewritten `master` ref.
 
 ### Notes
 
